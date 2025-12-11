@@ -1,4 +1,46 @@
 @use "reset";
 @use "variables" as *;
 
-/* new test */
+* {
+  // outline: 2px solid green;
+}
+
+.main {
+  display: flex;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero__header {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__title {
+  font-family: $rh-display;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-align: center;
+  color: $slate-900;
+}
+
+.hero__people-image {
+  width: 100%;
+  max-width: 680px;
+  max-height: 303px;
+  aspect-ratio: 375/160;
+}
+
+.hero__people-image img {
+  height: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
