@@ -5,14 +5,25 @@
   // outline: 2px solid green;
 }
 
-.main {
-  display: flex;
+.main-content {
+}
+
+// .main {
+//   display: flex;
+// }
+
+main {
+  margin: 0 2rem;
 }
 
 .hero {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.hero__content {
+  // margin: 0 2rem;
 }
 
 .hero__header {
@@ -36,7 +47,10 @@
   width: 100%;
   max-width: 680px;
   max-height: 303px;
-  aspect-ratio: 375/160;
+  min-height: 160px;
+  aspect-ratio: 433/160;
+  margin: 0 2rem;
+  margin-bottom: 3rem;
 }
 
 .hero__people-image img {
