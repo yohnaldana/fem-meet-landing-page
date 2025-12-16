@@ -16,6 +16,14 @@ img {
   display: block;
 }
 
+/* Buttons */
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
 /* Colors */
 /* Fonts */
 p {
@@ -72,6 +80,26 @@ main {
   font-weight: 500;
   line-height: 1.5;
   margin: 1.5rem 0;
+}
+
+button {
+  border-radius: 999px;
+  padding: 0 2.5rem;
+  color: #fafafa;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0;
+  height: 3.5rem;
+}
+
+.hero__download-btn {
+  background-color: #4d96a9;
+}
+
+.hero__what-is-btn {
+  background-color: #855fb1;
 }
 
 /*# sourceMappingURL=styles.css.map */
