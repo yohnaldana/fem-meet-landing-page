@@ -5,12 +5,9 @@
   // outline: 2px solid green;
 }
 
-.main-content {
+p {
+  font-family: $rh-display;
 }
-
-// .main {
-//   display: flex;
-// }
 
 main {
   margin: 0 2rem;
@@ -20,6 +17,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .hero__content {
@@ -57,4 +55,12 @@ main {
   height: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.hero__description {
+  font-size: 1rem;
+  color: $slate-600;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 1.5rem 0;
 }

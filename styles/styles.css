@@ -18,6 +18,10 @@ img {
 
 /* Colors */
 /* Fonts */
+p {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 main {
   margin: 0 2rem;
 }
@@ -26,6 +30,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .hero__header {
@@ -59,6 +64,14 @@ main {
   height: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.hero__description {
+  font-size: 1rem;
+  color: #87879d;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 1.5rem 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
