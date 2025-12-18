@@ -39,6 +39,7 @@ main {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .hero__header {
@@ -94,12 +95,22 @@ button {
   height: 3.5rem;
 }
 
+.hero__btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+
 .hero__download-btn {
   background-color: #4d96a9;
+  flex-basis: 12.0625rem;
 }
 
 .hero__what-is-btn {
   background-color: #855fb1;
+  flex-basis: 10.0625rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
