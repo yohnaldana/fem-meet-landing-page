@@ -113,4 +113,32 @@ button {
   flex-basis: 10.0625rem;
 }
 
+.section-division {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-division__line {
+  width: 1.5px;
+  height: 5rem;
+  border: 1px solid #d1d1df;
+}
+
+.section-division__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1.5px solid #d1d1df;
+  border-radius: 50%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #87879d;
+  background-color: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */
