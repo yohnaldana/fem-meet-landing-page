@@ -122,3 +122,22 @@ button {
   color: $slate-600;
   background-color: #fff;
 }
+
+.features__usage-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.features__usage-examples-image {
+  width: 100%;
+  flex: 1 1 auto;
+  flex-basis: 147.5px;
+  border-radius: 0.5rem;
+}
+
+.features__overline {
+  color: $cyan-600;
+}
