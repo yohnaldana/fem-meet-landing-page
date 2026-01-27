@@ -1,20 +1,13 @@
 @use "reset";
 @use "variables" as *;
 
-* {
-  // outline: 2px solid green;
-}
-
 p {
   font-family: $rh-display;
 }
 
-html {
-}
-
 main {
   // margin: 0 2rem;
-  // overflow-x: hidden; why was this set?
+  overflow-x: hidden;
 }
 
 .main-margin {
@@ -31,6 +24,7 @@ main {
 
 .content-width {
   max-width: 504px;
+  margin: 0 auto;
 }
 
 .hero__header {
@@ -55,11 +49,9 @@ main {
   max-width: 820px;
   max-height: 303px;
   min-height: 160px;
-  // aspect-ratio: 2.71;
   aspect-ratio: 2.24;
   margin: 0 2rem;
   margin-bottom: 3rem;
-  // overflow: visible;
 }
 
 .hero__people-image img {
@@ -87,6 +79,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0;
   height: 3.5rem;
+
+  transition: background-color 0.75s;
+}
+
+.hero__download-btn:hover {
+  background-color: #71c0d4;
 }
 
 .hero__btns {
@@ -102,9 +100,19 @@ button {
   flex-basis: 12.0625rem;
 }
 
+.hero__download-btn span {
+  color: $cyan-300;
+}
+
 .hero__what-is-btn {
   background-color: $purple-600;
   flex-basis: 10.0625rem;
+  transition: background-color 0.4s;
+}
+
+.hero__what-is-btn:hover,
+.footer__button:hover {
+  background-color: #b188dd;
 }
 
 .section-division {
@@ -206,6 +214,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0;
   margin-bottom: 1.5rem;
+  padding: 0 2rem;
 }
 
 .footer__background {
@@ -220,4 +229,74 @@ button {
 
 .footer__button {
   background-color: $purple-600;
+  transition: background-color 0.4s;
+}
+
+.footer__button span {
+  color: $purple-300;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .footer__paragraph {
+    max-width: 504px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1000px) {
+  .features {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .hero__people-image {
+    display: none;
+  }
+
+  .hero__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hero__content::before {
+    content: url(../assets/desktop/image-hero-left.png);
+    position: relative;
+    transform: translateX(-60px);
+  }
+
+  .hero__content::after {
+    content: url(../assets/desktop/image-hero-right.png);
+    transform: translateX(60px);
+  }
+
+  .footer__background {
+    background-image:
+      linear-gradient(0deg, rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.8)),
+      url(../assets/desktop/image-footer.jpg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0;
+    padding: 7rem 80px;
+    text-align: left;
+    gap: 2rem;
+
+    .content-width {
+      margin: 0;
+    }
+
+    .footer__header {
+      padding: 0;
+      margin: 0;
+      // flex-basis: 445px;
+    }
+
+    .footer__paragraph {
+      margin: 0;
+      flex-basis: 355px;
+    }
+  }
 }
