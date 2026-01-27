@@ -18,6 +18,7 @@
     />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Frontend Mentor | Meet landing page</title>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <main>
@@ -28,20 +29,25 @@
           </section>
           <section class="hero__people-image">
             <img
+              class="hero__image"
               src="./assets/tablet/image-hero.png"
               alt="portraits of meet users"
             />
           </section>
-          <section class="hero__content content-width">
-            <h1 class="hero__title">Group Chat for Everyone</h1>
-            <p class="hero__description">
-              Meet makes it easy to connect with others face-to-face virtually
-              and collaborate across any device.
-            </p>
-            <section class="hero__btns">
-              <button class="hero__download-btn">Download v1.3</button>
-              <button class="hero__what-is-btn">What is it?</button>
-            </section>
+          <section class="hero__content">
+            <div class="content-width">
+              <h1 class="hero__title">Group Chat for Everyone</h1>
+              <p class="hero__description">
+                Meet makes it easy to connect with others face-to-face virtually
+                and collaborate across any device.
+              </p>
+              <section class="hero__btns">
+                <button class="hero__download-btn">
+                  Download <span>v1.3</span>
+                </button>
+                <button class="hero__what-is-btn">What is it?</button>
+              </section>
+            </div>
           </section>
         </section>
         <section class="features">
@@ -89,14 +95,12 @@
         </section>
       </section>
       <section class="footer__background">
-        <div class="content-width">
-          <h2 class="footer__header">Experience more together</h2>
-          <p class="footer__paragraph">
-            Stay connected with reliable HD meetings and unlimited one-on-one
-            and group video sessions.
-          </p>
-        </div>
-        <button class="footer__button">Download v1.3</button>
+        <h2 class="footer__header">Experience more together</h2>
+        <p class="footer__paragraph">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <button class="footer__button">Download <span>v1.3</span></button>
       </section>
     </main>
   </body>
